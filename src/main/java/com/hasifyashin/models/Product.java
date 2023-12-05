@@ -3,18 +3,12 @@ package com.hasifyashin.models;
 import java.math.BigDecimal;
 
 public class Product {
-    private final int id;
     private final String name;
     private final BigDecimal price;
 
-    public Product(int id, String name, BigDecimal price) {
-        this.id = id;
+    public Product(String name, BigDecimal price) {
         this.name = name;
         this.price = price;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {
